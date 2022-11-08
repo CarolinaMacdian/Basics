@@ -1,0 +1,254 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>ChocolatMania</title>
+
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Eczar:wght@400;500;600;700;800&family=Lobster&family=Lobster+Two&family=Poppins:ital,wght@0,100;0,200;0,400;1,100&display=swap"
+      rel="stylesheet" />
+
+    <style>
+      body,
+      footer {
+        background-color: #f9f4ed;
+      }
+
+      h1,
+      h2 {
+        font-weight: 900;
+        font-size: 34px;
+        line-height: 48px;
+        margin: 0;
+        padding: inherit;
+      }
+      h1 {
+        color: #51211d;
+        text-align: center;
+        font-family: "Lobster", cursive;
+      }
+      h2 {
+        text-align: center;
+        color: #8e513e;
+        font-family: "Poppins", sans-serif;
+      }
+
+      img {
+        width: 700px;
+        float: left;
+        margin: 0px 50px 0px 50px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px #8e513e;
+        display: block;
+      }
+
+      .highlight {
+        color: #8e513e;
+        font-size: 48px;
+        line-height: 60px;
+        font-family: "Bevan", cursive;
+        margin: 50px;
+        display: block;
+      }
+
+      .bodyText {
+        display: block;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+        color: #f9f4ed;
+        padding: 50px;
+        font-family: "Eczar", serif;
+        background: rgb(49, 21, 19);
+        background: linear-gradient(
+          90deg,
+          rgba(49, 21, 19, 1) 0%,
+          rgba(142, 81, 62, 1) 45%,
+          rgba(196, 151, 87, 1) 100%
+        );
+        margin: 50px;
+        box-shadow: 5px 5px 10px #8e513e;
+        border-radius: 10px;
+      }
+
+      .linkText {
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+        color: #f9f4ed;
+        text-decoration: none;
+      }
+
+      .linkText:hover {
+        color: #51211d;
+        font-family: "Eczar", serif;
+        font-weight: bold;
+        transition: all 200ms ease-in-out;
+      }
+
+      button {
+        border-radius: 25px;
+        margin: 60px auto;
+        display: block;
+        background-color: #8e513e;
+        border: none;
+        color: #f9f4ed;
+        font-size: 26px;
+        line-height: 22px;
+        padding: 16px 24px;
+        text-decoration: none;
+        font-family: "Lobster", cursive;
+        box-shadow: 5px 5px 10px #c49757;
+      }
+      button:hover {
+        color: #8e513e;
+        background: #f9f4ed;
+        border-color: #8e513e;
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+      }
+
+      .footer {
+        color: #51211d;
+        text-align: center;
+        margin: 20px auto;
+        font-family: "Poppins", sans-serif;
+        font-size: 10px;
+      }
+
+      .creator {
+        color: #8e513e;
+        text-decoration: none;
+      }
+
+      .creator:hover {
+        font-weight: bold;
+        transition: all 200ms ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1><strong>ChocolateMania</strong></h1>
+      <h2>For the love of Chocolate!</h2>
+    </div>
+    <section>
+      <div>
+        <img
+          src="https://super.abril.com.br/wp-content/uploads/2017/04/chocolate.png?quality=90&strip=info&resize=850,567"
+          alt="chocolate pieces" />
+      </div>
+      <div class="highlight">
+        <p>
+          "Chocolate is a food made from roasted and ground cacao seed kernels
+          that is available as a liquid, solid, or paste, either on its own or
+          as a flavoring agent in other foods."
+        </p>
+      </div>
+    </section>
+    <div class="bodyText">
+      <p>
+        Chocolate is one of the most popular food types and flavors in the
+        world, and many foodstuffs involving chocolate exist, particularly
+        desserts, including cakes, pudding, mousse, chocolate brownies, and
+        chocolate chip cookies. Many candies are filled with or coated with
+        sweetened chocolate. Chocolate bars, either made of solid chocolate or
+        other ingredients coated in chocolate, are eaten as snacks. <br />
+        Gifts of chocolate molded into different shapes (such as eggs, hearts,
+        coins) are traditional on certain Western holidays, including Christmas,
+        Easter, Valentine's Day, and Hanukkah. Chocolate is also used in cold
+        and hot beverages, such as chocolate milk and hot chocolate, and in some
+        alcoholic drinks, such as creme de cacao.
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Chocolate"
+        target="_blank"
+        class="linkText">
+        <em>Learn more on Wikipedia</em>
+      </a>
+    </div>
+
+    <div>
+      <button>Be a ChocolateManiac!</button>
+    </div>
+    <script>
+      function costumerData() {
+        let name = prompt("What is your name?");
+        let email = prompt(
+          "Hello, " +
+            name +
+            "! What is your e-mail? So we can send you some goodies!"
+        );
+        alert("Thank you " + name + ", you are now part of our Newsletter!");
+      }
+      function chocolate() {
+        let p = document.querySelector("p");
+        let info = prompt("Now, tell me, what chocolate do you like?");
+        if (
+          info.toUpperCase() === "milk".toUpperCase() ||
+          info.toUpperCase() === "dark".toUpperCase() ||
+          info.toUpperCase() === "white".toUpperCase() ||
+          info.toUpperCase() === "all".toUpperCase()
+        ) {
+          p.innerHTML =
+            "Way to go " +
+            name +
+            "! You are a true CocolateManiac!" +
+            " We'll send you some clues to were to buy the best " +
+            info +
+            " Chocolate! Don't forget to check bellow the history of Chocolate! 🍫";
+        } else {
+          if (
+            info.toUpperCase() !== "milk".toUpperCase() ||
+            info.toUpperCase() !== "dark".toUpperCase() ||
+            info.toUpperCase() !== "white".toUpperCase() ||
+            info.toUpperCase() !== "all".toUpperCase()
+          ) {
+            p.innerHTML =
+              "Sorry, " +
+              name +
+              "You'll have to show us some more love to be a ChocolateManiac, but we will send you some chocolaty delights anyway! Please check your e-mail!";
+          }
+        }
+        if (info.toUpperCase() === "all".toUpperCase()) {
+          p.innerHTML =
+            "Way to go! You are a true CocolateManiac!" +
+            " We'll send you some clues to were to buy the best Chocolate! Don't forget to check bellow the history of Chocolate! 🍫";
+        }
+      }
+
+      let applyNowButton = document.querySelector("button");
+
+      applyNowButton.addEventListener("click", costumerData);
+      applyNowButton.addEventListener("click", chocolate);
+    </script>
+  </body>
+  <footer>
+    <div class="footer">
+      <p>
+        This page was built by
+        <a
+          href="https://www.linkedin.com/in/carolinamacdian"
+          target="_blank"
+          class="creator">
+          Ana Machado
+        </a>
+      </p>
+    </div>
+  </footer>
+</html>
